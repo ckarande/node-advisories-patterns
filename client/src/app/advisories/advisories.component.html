@@ -1,0 +1,30 @@
+<div id="advisories-component" class="advisories-component-container">
+    <div>
+    <ul class="attacks">
+        <li *ngFor="let arr of attackCategories">
+            <a (click)="filterByAttackType(arr[0])">
+                <span class="badge">{{arr[1]}}</span> {{arr[0]}}
+            </a>
+
+        </li>
+    </ul>
+    </div>
+    <div class="advisories">
+        <span>{{selectedAttackType}} ({{count}})</span>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Module</th>
+                <th>Publish Date</th>
+                <th>Source</th>
+
+            </tr>
+            <tr *ngFor="let advisory of advisories">
+                <td><a [href]="sanitizer.bypassSecurityTrustUrl(advisory.url)" target="_blank"> {{advisory.title}} </a></td>
+                <td><span> {{advisory.module}}</span></td>
+                <td><span> {{advisory.pubDate | date:'shortDate'}}</span></td>
+                <td><span> {{advisory.source}}</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
