@@ -1,8 +1,8 @@
 <div id="advisories-component" class="advisories-component-container">
     <div>
-    <ul class="attacks">
-        <li *ngFor="let arr of attackCategories">
-            <a (click)="filterByAttackType(arr[0])">
+    <ul class="attacks" #list>
+        <li *ngFor="let arr of attackCategories; let i =index">
+            <a (click)="filterByAttackType(arr[0],i)">
                 <span class="badge">{{arr[1]}}</span> {{arr[0]}}
             </a>
 
@@ -10,7 +10,7 @@
     </ul>
     </div>
     <div class="advisories">
-        <span>{{selectedAttackType}} ({{count}})</span>
+        <span class="span-count" *ngIf="count>0">{{selectedAttackType}} ({{count}})</span>
         <table>
             <tr>
                 <th>Title</th>
@@ -28,3 +28,4 @@
         </table>
     </div>
 </div>
+

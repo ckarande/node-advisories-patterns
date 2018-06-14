@@ -9,25 +9,26 @@
   list-style-type: none;
   padding: 0;
   width: 25em;
+  padding-top: 15px;
 }
 .attacks li {
   position: relative;
   cursor: pointer;
-  background-color: #EEE;
+  background-color: #3E4252;
   margin: .5em;
-  padding: .3em 0;
+  padding: .26em 0;
   height: 1.6em;
   border-radius: 4px;
 }
 
 .attacks li:hover {
   color: #607D8B;
-  background-color: #DDD;
+  background-color: #8eaac5;
   left: .1em;
 }
 
 .attacks a {
-  color: #888;
+  color: white;
   text-decoration: none;
   position: relative;
   display: block;
@@ -43,7 +44,6 @@
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
   line-height: 1em;
   position: relative;
   left: -1px;
@@ -55,6 +55,17 @@
   border-radius: 4px 0 0 4px;
 }
 
+.advisories{
+  margin-left: 15px;
+  height: 640px;
+  overflow-y: auto;
+}
+.span-count{
+  display: inline-block;
+  padding-bottom: 5px;
+  color: green;
+  font-weight: bold;
+}
 
 /* Styles for table */
 body {
@@ -62,30 +73,32 @@ body {
   font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-table a {
-  color: #00B7FF;
-}
+
 table {
   font-family: arial, sans-serif;
+  overflow: hidden;
+  display: table;
   border-collapse: collapse;
+  border-color: grey;
   width: 100%;
+  background: #fff;
+  color: #4e5b9e;
+
+}
+
+table tr{
+  border-color: #46637f;
+ border:1px solid grey;
 }
 
 td, th {
-  border: 1px solid #EEE;
   text-align: left;
   padding: 8px;
+
 }
 
-tr:nth-child(even) {
-  background-color: #EEE;
-}
+
 
 tr:hover {
-  background-color: #DDD;
-}
-
-th {
-  background-color: #607D8B;
-  color: #FFF;
+  background-color: #8eaac5;
 }

@@ -1,0 +1,119 @@
+/* AdvisoriesComponent's private CSS styles */
+
+.advisories-component-container {
+  display: flex;
+  background-color: #34495e;
+  color: #FFF;
+}
+
+.attacks {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 25em;
+  padding-top: 15px;
+  background-color: #34495e;
+}
+.attacks li {
+  position: relative;
+  cursor: pointer;
+  background-color: #34495e;
+  margin: .5em;
+  padding: .26em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+.attacks li:hover {
+  color: #607D8B;
+  background-color: #8eaac5;
+  left: .1em;
+}
+
+.attacks a {
+  color: #FFF;
+  text-decoration: none;
+  position: relative;
+  display: block;
+
+}
+
+.attacks a:hover {
+  color:#607D8B;
+}
+
+.attacks .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #039be5;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px;
+}
+
+.advisories{
+  margin-left: 15px;
+  height: 640px;
+  overflow-y: auto;
+}
+.span-count{
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Styles for table */
+body {
+  padding: 50px;
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+table a {
+  color: #fff;
+}
+table {
+  font-family: arial, sans-serif;
+  border-radius: .4em;
+  overflow: hidden;
+  display: table;
+  border-collapse: separate;;
+  border-spacing: 2px;
+  border-color: #34495e;
+  width: 100%;
+  background: white;
+  color: white;
+}
+
+table tr{
+  border-color: #46637f;
+  border-top: 1px solod #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+tr:hover {
+  background-color: #8eaac5;
+}
+
+
+
+
+
+
+
+
